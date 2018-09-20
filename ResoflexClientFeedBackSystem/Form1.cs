@@ -120,7 +120,7 @@ namespace ResoflexClientFeedBackSystem
                 byte[] response = wb.UploadValues("https://api.txtlocal.com/send/", new NameValueCollection()
                 {
                 {"apikey" , "vuHeQkjT1nE-kGtSpqkwMKOhPRGl2AGXtCDYvi4JGP"},
-                {"numbers" , "94777188617"},
+                {"numbers" , "94772626224"},
                 {"message" , message},
                 {"sender" , "Jims Autos"}
                 });
