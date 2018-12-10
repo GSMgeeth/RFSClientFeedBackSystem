@@ -54,16 +54,16 @@ namespace ResoflexClientFeedBackSystem
                 notifyIconMailSuccessful.BalloonTipText = "Email sent successfully!";
                 notifyIconMailSuccessful.ShowBalloonTip(200);
 
-                msgTxtBox.Text = "";
+                //msgTxtBox.Text = "";
 
-                string result = sendSms("message");
+                //string result = sendSms("message");
 
-                if (result != null)
-                    msgTxtBox.Text = result;
+                //if (result != null)
+                //    msgTxtBox.Text = result;
 
-                notifyIconMailSuccessful.Icon = SystemIcons.Application;
-                notifyIconMailSuccessful.BalloonTipText = "SMS sent successfully!";
-                notifyIconMailSuccessful.ShowBalloonTip(200);
+                //notifyIconMailSuccessful.Icon = SystemIcons.Application;
+                //notifyIconMailSuccessful.BalloonTipText = "SMS sent successfully!";
+                //notifyIconMailSuccessful.ShowBalloonTip(200);
 
                 if (checkBoxTV.Checked)
                 {
@@ -78,6 +78,8 @@ namespace ResoflexClientFeedBackSystem
 
                     msgTxtBox.Text = "TeamViewer Exited";
                 }
+
+                UserControlTest userControl1 = new UserControlTest();
             }
             catch (Exception exc)
             {
@@ -120,7 +122,7 @@ namespace ResoflexClientFeedBackSystem
                 byte[] response = wb.UploadValues("https://api.txtlocal.com/send/", new NameValueCollection()
                 {
                 {"apikey" , "vuHeQkjT1nE-kGtSpqkwMKOhPRGl2AGXtCDYvi4JGP"},
-                {"numbers" , "94772626224"},
+                {"numbers" , "9477188617"},
                 {"message" , message},
                 {"sender" , "Jims Autos"}
                 });
